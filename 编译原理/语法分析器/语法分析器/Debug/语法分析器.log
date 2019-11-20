@@ -1,0 +1,3 @@
+﻿  main.cpp
+d:\github\class-experiment-report\编译原理\语法分析器\语法分析器\main.cpp(20): warning C4101: “m”: 未引用的局部变量
+  语法分析器.vcxproj -> D:\github\Class-experiment-report\编译原理\语法分析器\Debug\语法分析器.exe
