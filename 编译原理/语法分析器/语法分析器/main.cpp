@@ -1,87 +1,125 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-
-#include<stdio.h>    
-#include<string>
-
-char str[50];
-int index = 0;
-void E();                //E->TX; 
-void X();                //X->+TX | e 
-void T();                //T->FY 
-void Y();                //Y->*FY | e 
-void F();                //F->(E) | i 
-
-int main()                /*递归分析*/
-{
-	int len;
-	int m;
-	printf("请输入字符串(长度<50>）:\n");
-	scanf("%s", str);
-	len = strlen(str);
-	//str[len]='#';
-	str[len + 1] = '\0';
-	E();
-	printf("%s为合法符号串\n", str);
-	strcpy(str, "");
-	index = 0;
+#include<stdio.h>
+#include<stdlib.h>
+void E();
+void T();
+void E1();
+void T1();
+void F();
+void i();
+char s[100];
+int j, k;
+int main() {
+	printf("请输入一个语句，以#号结束语句\n");
+	while (1) {
+		k = 0;
+		j = 0;
+		scanf("%s", &s);
+		if (s[0] == '#')
+			return 0;
+		E();
+		if (k == 0) {
+			if (s[j] == '#')
+				printf("合法！\n");
+		}
+		printf("请输入一个语句，以#号结束语句\n");
+	}
 	system("pause");
-	return 0;
+	return 1;
+}
+void match(char t)
+{
+	if (s[j] == t)
+	{
+		j = j + 1;
+	}
+	else
+	{
+		printf("不合法");
+	}
 }
 
 void E()
 {
-	T();    
-	X();
-}
-void X()
-{
-	if (str[index] == '+')
+	if (k == 0)
 	{
-		index++;
 		T();
-		X();
+		E1();
 	}
 }
+
+void E1()
+{
+	if (k == 0)
+	{
+		if (s[j] == '+')
+		{
+			match('+');
+			T();
+			E1();
+		}
+		else if (s[j] != '#'&&s[j] != ')')
+		{
+			printf("不合法！\n");
+			k = 1;
+		}
+	}
+}
+
 void T()
 {
-	F();     
-	Y();
-}
-void Y()
-{
-	if (str[index] == '*') 
+	if (k == 0)
 	{
-		index++;
 		F();
-		Y();
+		T1();
 	}
 }
+
+void T1()
+{
+	if (k == 0)
+	{
+		if (s[j] == '*')
+		{
+			match('*');
+			F();
+			T1();
+		}
+		else if (s[j] != '#'&&s[j] != ')'&&s[j] != '+')
+		{
+			printf("不合法！\n");
+			k = 1;
+		}
+	}
+}
+
 void F()
 {
-	
-	if (str[index] =='i')
+	if (k == 0)
 	{
-		index++;
-	}
-	else if (str[index] == '(')
-	{
-		index++;
-		E();
-		if (str[index] == ')')
+		if (s[j] == '(')
 		{
-			index++;
+			match('(');
+			E();
+			if (s[j] == ')')
+				match(')');
+			else if (s[j] == '#')
+			{
+				printf("不合法！\n括号不匹配\n");
+				++j;
+				k = 1;
+			}
 		}
-		else
-		{
-			printf("\n不合法\n");
-			system("pause");
-			exit(0);
-		}
+		else  i();
 	}
+}
+
+void i() {
+	if (s[j] >= '0'&&s[j] <= '9')
+		++j;
 	else
 	{
-		printf("不合法\n");
-		system("pause");
-		exit(0);
+		printf("不合法！\n");
+		k = 1;
 	}
 }

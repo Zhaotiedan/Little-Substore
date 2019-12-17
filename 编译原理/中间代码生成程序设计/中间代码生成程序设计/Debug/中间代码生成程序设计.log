@@ -1,0 +1,8 @@
+﻿  main.c
+d:\github\class-experiment-report\编译原理\中间代码生成程序设计\中间代码生成程序设计\main.c(57): warning C4566: 由通用字符名称“\u00B4”表示的字符不能在当前代码页(936)中表示出来
+d:\github\class-experiment-report\编译原理\中间代码生成程序设计\中间代码生成程序设计\main.c(57): warning C4566: 由通用字符名称“\u00CE”表示的字符不能在当前代码页(936)中表示出来
+d:\github\class-experiment-report\编译原理\中间代码生成程序设计\中间代码生成程序设计\main.c(59): warning C4566: 由通用字符名称“\u00B4”表示的字符不能在当前代码页(936)中表示出来
+d:\github\class-experiment-report\编译原理\中间代码生成程序设计\中间代码生成程序设计\main.c(59): warning C4566: 由通用字符名称“\u00CE”表示的字符不能在当前代码页(936)中表示出来
+d:\github\class-experiment-report\编译原理\中间代码生成程序设计\中间代码生成程序设计\main.c(75): warning C4566: 由通用字符名称“\u00B4”表示的字符不能在当前代码页(936)中表示出来
+d:\github\class-experiment-report\编译原理\中间代码生成程序设计\中间代码生成程序设计\main.c(75): warning C4566: 由通用字符名称“\u00CE”表示的字符不能在当前代码页(936)中表示出来
+  中间代码生成程序设计.vcxproj -> D:\github\Class-experiment-report\编译原理\中间代码生成程序设计\Debug\中间代码生成程序设计.exe
