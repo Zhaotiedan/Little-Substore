@@ -1,0 +1,10 @@
+﻿body {font-size:12px;margin:0px;background-color:#616378;text-align:center;}
+form{margin-top:3px;font-size:12px;margin-bottom:0;font-family:"Tohoma","MS Shell Dlg";}
+.header{width:778px;height:86px;margin:0 auto;
+        padding:4px 2px 2px 10px;text-align: left; background-color:#fff;}
+.header ul{width:490px;float:right}
+.header ul li{width:96.4px;height:40px;text-align:center;}
+.header ul li a:hover{background-color:#8c8ea3;}
+.header .status{width:490px;float:right;padding:6px;color:#fff;background-color:#666688;}
+.navDark{background-color:#8c8ea3;}
+.sitemap{width:778px;margin:0 auto;text-align:left;padding-left:6px;background-color:#ccccd4;}

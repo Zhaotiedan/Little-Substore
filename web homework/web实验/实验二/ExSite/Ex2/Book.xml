@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Books>
+  <Book ID="001">
+    <BookName>Web程序设计--asp.net实用网站开发</BookName>
+    <Author>沈士根；叶晓红</Author>
+    <Price>49</Price>
+  </Book>
+
+  <Book ID="100">
+    <BookName>asp.net高级编程</BookName>
+    <Author>张立</Author>
+    <Price>156</Price>
+  </Book>
+
+  <Book ID="104">
+    <BookName>C#高级编程</BookName>
+    <Author>王小明</Author>
+    <Price>119.4</Price>
+  </Book>
+
+  <Book ID="106">
+    <BookName>基于C#精通LING数据访问</BookName>
+    <Author>毛一中</Author>
+    <Price>49</Price>
+  </Book>
+</Books>

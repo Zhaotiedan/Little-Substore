@@ -1,0 +1,33 @@
+﻿a {
+    text-decoration: none;
+}
+body {
+    background-color: #616378;
+    font-size: 12px;
+    margin: 0px;
+    text-align: center;
+}
+table {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 4px 2px 2px 10px;
+    text-align: left;
+    width: 778px;
+    height: 86px;
+}
+.nevigations {
+    background-color: #8c8ea3;
+    text-align: center;
+    width: 96.4px;
+}
+.status {
+    background-color: #666688;
+    color: #fff;
+}
+.position {
+    background-color: #ccccd4;
+    margin: 0auto;
+    padding-left: 6px;
+    text-align: left;
+    width: 778px;
+}
